@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -49,12 +50,40 @@
                         <constraints>
                             <constraint firstItem="MXp-OY-GHp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4DT-tJ-rxb"/>
                             <constraint firstAttribute="centerX" secondItem="mSf-0v-qgP" secondAttribute="centerX" id="JFZ-AE-vuW"/>
+                            <constraint firstItem="mSf-0v-qgP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="MlN-EZ-AZ9"/>
+                            <constraint firstItem="mSf-0v-qgP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="Qn8-IM-PD6"/>
                             <constraint firstItem="mSf-0v-qgP" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="R3L-ej-f4E"/>
+                            <constraint firstItem="MXp-OY-GHp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="XFC-hV-ymQ"/>
                             <constraint firstAttribute="trailing" secondItem="MXp-OY-GHp" secondAttribute="trailing" id="Xkl-eR-gft"/>
+                            <constraint firstAttribute="centerY" secondItem="mSf-0v-qgP" secondAttribute="centerY" id="eHe-Pk-J99"/>
                             <constraint firstItem="MXp-OY-GHp" firstAttribute="top" secondItem="mSf-0v-qgP" secondAttribute="bottom" constant="20" id="gMu-Ww-0vJ"/>
                             <constraint firstItem="mSf-0v-qgP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jWz-nl-myx"/>
+                            <constraint firstItem="MXp-OY-GHp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="o6r-LD-TlR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MXp-OY-GHp" secondAttribute="bottom" id="s6f-WZ-ccc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MlN-EZ-AZ9"/>
+                                <exclude reference="Qn8-IM-PD6"/>
+                                <exclude reference="eHe-Pk-J99"/>
+                                <exclude reference="XFC-hV-ymQ"/>
+                                <exclude reference="o6r-LD-TlR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="JFZ-AE-vuW"/>
+                                <include reference="MlN-EZ-AZ9"/>
+                                <include reference="Qn8-IM-PD6"/>
+                                <exclude reference="R3L-ej-f4E"/>
+                                <include reference="eHe-Pk-J99"/>
+                                <exclude reference="jWz-nl-myx"/>
+                                <exclude reference="4DT-tJ-rxb"/>
+                                <include reference="XFC-hV-ymQ"/>
+                                <exclude reference="gMu-Ww-0vJ"/>
+                                <include reference="o6r-LD-TlR"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
